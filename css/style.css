@@ -52,6 +52,7 @@ main img{
     border-radius: 50%;
 }
 
+
 [team] {
     margin: 50px;
     text-align: center;
@@ -90,4 +91,31 @@ footer a:hover{
     width: 100%;
     height: 5px;
     background-color: #262626;
+}
+
+
+/* ----------------------- PAGE CONTACT -------------------- */
+[contact-us] {
+    text-align: center;
+}
+
+[contact-us] form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+[contact-us] button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    background-color: deeppink;
+    font-size: 15px;
+    color: white;
+}
+
+[contact-us] button:hover{
+    box-shadow: 5px 5px 10px black;
 }
