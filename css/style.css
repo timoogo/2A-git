@@ -54,10 +54,16 @@ nav a{
     padding: 2px 30px;
     color: black;
 }
+main{
+    padding-bottom: 5rem;
+}
 
 main img{
     width: 200px;
     height: 200px;
+    
+}
+[team] main img {
     border-radius: 50%;
 }
 
@@ -69,19 +75,36 @@ main img{
     justify-content: space-evenly;
 }
 
+
+[brief], [solution]{
+   width: 70%;
+   margin: auto;
+}
+[brief] h2{
+    text-align: center;
+    margin: 2rem;
+
+}
+[brief] img{
+    width: 100%;
+    height: 100%;
+}
+[Solution]{
+    margin-bottom: 5rem;
+}
 footer{
     width: 100%;
     height: 110px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #454545;
     color: white;
     border-top: #262626 5px solid;
     border-bottom: #262626 5px solid;
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 footer a{
     color: white;
