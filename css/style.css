@@ -67,6 +67,7 @@ main img{
     border-radius: 50%;
 }
 
+
 [team] {
     margin: 50px;
     text-align: center;
@@ -92,6 +93,10 @@ main img{
 [Solution]{
     margin-bottom: 5rem;
 }
+button{
+    outline: none;
+}
+
 footer{
     width: 100%;
     height: 110px;
@@ -112,4 +117,50 @@ footer a{
 footer a:hover{
     color: grey;
     transition: 0.2s;
+}
+
+.borderFooter{
+    width: 100%;
+    height: 5px;
+    background-color: #262626;
+}
+
+
+/* ----------------------- PAGE CONTACT -------------------- */
+[contact-us] {
+    text-align: center;
+}
+
+[contact-us] form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+[contact-us] input {
+    padding: 5px;
+}
+
+[contact-us] button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    background-color: deeppink;
+    font-size: 15px;
+    color: white;
+    transition: 0.5s;
+}
+
+[contact-us] button:hover{
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+[contact-us] button:active{
+    box-shadow: none;
+    transform: scale(1);
+    transition: 0.1s;
 }
