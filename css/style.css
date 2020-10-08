@@ -61,6 +61,10 @@ main img{
     justify-content: space-evenly;
 }
 
+button{
+    outline: none;
+}
+
 footer{
     display: flex;
     width: 100%;
@@ -106,6 +110,10 @@ footer a:hover{
     margin: auto;
 }
 
+[contact-us] input {
+    padding: 5px;
+}
+
 [contact-us] button{
     margin-top: 10px;
     border: none;
@@ -114,8 +122,17 @@ footer a:hover{
     background-color: deeppink;
     font-size: 15px;
     color: white;
+    transition: 0.5s;
 }
 
 [contact-us] button:hover{
     box-shadow: 5px 5px 10px black;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+[contact-us] button:active{
+    box-shadow: none;
+    transform: scale(1);
+    transition: 0.1s;
 }
