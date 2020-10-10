@@ -47,13 +47,16 @@ nav ul li{
     border-right: 1px solid var(--secondary-color);
 }
 
-nav ul li:hover{
+nav ul li:hover, header a h1:hover{
     transform: scale(1.05);
     transition: all 0.2s;
 }
 
 nav a{
     padding: 2px 30px;
+    color: black;
+}
+header a h1{
     color: black;
 }
 main{
