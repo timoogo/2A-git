@@ -54,6 +54,10 @@ function OpenPopup(pseudo) {
     document.getElementById("popup").style.display = "block";
 }
 
+function ClosePopup() {
+
+}
+
 // ---- EXEC ----
 window.onload = function() {
     //Add a listener for each profile cards to open the corresponding popup
@@ -63,6 +67,12 @@ window.onload = function() {
             OpenPopup(id);
         })
     });
+
+    //Add a listener for the close cross on the popup card
+    document.getElementById('popupCloseBtn').addEventListener('click', function() { ClosePopup(); });
+
+    //Add a listerner for closing the popup when clicking outside the card
+    document.getElementById('popup').addEventListener('click', function() { ClosePopup(); });
 };
 
 //TODO Créer le listener pour appeler la fonction closePopup quand on clique sur le popupContainer ou la croix de fermeture
