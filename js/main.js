@@ -20,4 +20,49 @@ const members = [
         profilePicture: { src: "img/martin_b.png", alt: "Image de profil Martin"},
         fullBio: "*Insert MadSandman's full-bio here*"
     }
-]
+];
+
+// ---- FUNCTIONS ----
+function LoadMember(idMember) {
+    let index = 0;
+
+    switch (idMember) {
+        case "Timoogo":
+            index = 0;
+            break;
+        case "ImWallAshing":
+            index = 1;
+            break;
+        case "SveRKeR":
+            index = 2;
+            break;
+        case "MadSandman":
+            index = 3;
+            break;
+        default:
+            break;
+    }
+
+    document.getElementById('popupImage').src = members[index].profilePicture.src;
+    document.getElementById('popupImage').alt = members[index].profilePicture.alt;
+    document.getElementById("popupName").innerHTML = members[index].name;
+    document.getElementById("popupFullBio").innerHTML = members[index].fullBio;
+}
+
+function OpenPopup(pseudo) {
+    LoadMember(pseudo);
+    document.getElementById("popup").style.display = "block";
+}
+
+// ---- EXEC ----
+window.onload = function() {
+    //Add a listener for each profile cards to open the corresponding popup
+    Array.from(document.getElementsByClassName("profileCard")).forEach(function(element) {
+        let id = element.id;
+        element.addEventListener('click', function() {
+            OpenPopup(id);
+        })
+    });
+};
+
+//TODO Créer le listener pour appeler la fonction closePopup quand on clique sur le popupContainer ou la croix de fermeture
