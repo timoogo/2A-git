@@ -99,6 +99,81 @@ footer a:hover{
     position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
 
+    justify-content: center;
+}
+
+#popupCard {
+    width: 70%;
+    height: fit-content;
+    margin: 5%;
+    padding: 10px;
+    position: relative;
+
+    background-color: white;
+    border: 5px solid var(--main-color);
+    border-radius: 10px;
+
+    display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+}
+
+.closeCross {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+        top: 10px;
+        right: 10px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    background-image: url('../img/close_cross.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    background-color: var(--secondary-color);
+}
+
+.closeCross:hover {
+    transform: scale(1.1);
+    animation: transform 0.5s;
+}
+
+.closeCross:active {
+    transform: scale(0.9);
+    background-color: rgb(128, 23, 23);
+    animation: all 0.5s;
+}
+
+.popupContainer h2, .popupContainer p {
+    margin-top: 10px;
+}
+
+/* Animations */
+
+.zoomIn {
+    animation-duration: .8s;
+    transform-origin: center 15%;
+    animation-name: zoom;
+    animation-direction: normal;
+}
+.zoomOut {
+    animation-duration: 0.5s;
+    transform-origin: center 15%;
+    animation-name: zoom;
+    animation-direction: reverse;
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
