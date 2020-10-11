@@ -1,7 +1,5 @@
 @import 'variables.css';
 
-
-
 * {
     padding: 0;
     margin: 0;
@@ -67,6 +65,22 @@ main img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.profileCard {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+.profileCard:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    transition: all 0.15s;
+}
+.profileCard:active {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.6);
+    transition: all 0.15s;
 }
 
 footer{
@@ -141,13 +155,13 @@ footer a:hover{
 
 .closeCross:hover {
     transform: scale(1.1);
-    animation: transform 0.5s;
+    transition: all 0.5s;
 }
 
 .closeCross:active {
     transform: scale(0.9);
     background-color: rgb(128, 23, 23);
-    animation: all 0.5s;
+    transition: all 0.5s;
 }
 
 .popupContainer h2, .popupContainer p {
