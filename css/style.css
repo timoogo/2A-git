@@ -166,6 +166,9 @@ footer{
 footer a{
     color: white;
 }
+footer a i {
+    margin: .4rem;
+}
 footer a:hover{
     color: grey;
     transition: 0.2s;
@@ -234,7 +237,7 @@ footer a:hover{
 
 #popupCard {
     width: 70%;
-    height: fit-content;
+    height: max-content;
     margin: 5%;
     padding: 10px;
     position: relative;
