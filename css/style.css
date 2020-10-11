@@ -153,10 +153,10 @@ footer{
     height: 110px;
     position: absolute;
     bottom: 0;
-    background-color: #454545;
+    background-color: var(--footer-main-color);
     color: white;
-    border-top: #262626 5px solid;
-    border-bottom: #262626 5px solid;
+    border-top: var(--footer-border-color) 5px solid;
+    border-bottom: var(--footer-border-color) 5px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
