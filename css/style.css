@@ -45,9 +45,13 @@ nav ul li{
     border-right: 1px solid var(--secondary-color);
 }
 
-nav ul li:hover, header a h1:hover{
+nav ul li:hover, header a:hover{
     transform: scale(1.05);
     transition: all 0.2s;
+}
+
+h1:hover{
+    color:white;
 }
 
 nav a{
@@ -88,15 +92,22 @@ main img{
 	-webkit-transform: skewX(-25deg);
 	transform: skewX(-25deg);
 }
+
+
+
+
+
 [team] div:hover::before {
 	-webkit-animation: shine 1s;
 	animation: shine 1s;
 }
+
 @-webkit-keyframes shine {
 	100% {
 		left: 125%;
 	}
 }
+
 @keyframes shine {
 	100% {
 		left: 125%;
@@ -115,6 +126,7 @@ main img{
     cursor: pointer;
     padding: 5px;
     border-radius: 3px;
+    overflow: hidden;
 }
 .profileCard:hover {
     transform: scale(1.1);
@@ -190,13 +202,22 @@ footer a:hover{
 [contact-us] form {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    margin: auto;
+    width: 40%;
+    margin: 15px auto;
 }
 
 [contact-us] input {
-    padding: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
 }
+
+[contact-us] label{
+    margin: 15px auto;
+    letter-spacing: 0.05rem;
+}
+
+
 
 [contact-us] button{
     margin-top: 10px;
@@ -207,6 +228,8 @@ footer a:hover{
     font-size: 15px;
     color: white;
     transition: 0.5s;
+    width: 200px;
+    align-self: center;
 }
 
 [contact-us] button:hover{
@@ -287,6 +310,10 @@ footer a:hover{
     margin-top: 10px;
 }
 
+h2.title{
+    font-size: 1.8rem;
+    padding: 20px;
+}
 
 /* Animations */
 
